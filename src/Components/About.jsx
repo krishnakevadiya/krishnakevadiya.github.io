@@ -4,7 +4,10 @@ import gif from "../img/gif.png"
 const about = () => {
   return (
     <div >
-        
+        <Text style={{color:"gray",
+    fontSize:"40px",
+    fontWeight:"bold",
+    textDecoration: "0.5px  underline"}} >About</Text>
        <Flex id='about' flexDirection={["column-reverse","row"]} m="2%" color="gray" border={"0px solid red"} >
        <Box ml={["2%","5%","10%"]} alignItems={["Center"]} >
                 <Image h="90%"  src={gif}  style={{borderRadius:"50%",height:"280px" ,width:"380px" }} ></Image>

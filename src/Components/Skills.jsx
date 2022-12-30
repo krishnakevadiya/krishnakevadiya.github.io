@@ -1,4 +1,5 @@
 import { Box, Flex, Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react"
+import GitHubCalendar from "react-github-calendar"
 
 
 
@@ -12,7 +13,8 @@ const Skills = () => {
       <Box  id="skills" ml={"10%"} mr={"10%"} >
       <Text style={{color:"gray",
     fontSize:"40px",
-    fontWeight:"bold"}} >Skills</Text>
+    fontWeight:"bold",
+    textDecoration: "0.5px  underline"}} >Skills</Text>
       <Box>
     <Text align="center" style={{ color:"gray",
     fontSize:"30px",
@@ -43,7 +45,7 @@ const Skills = () => {
     fontSize:"30px",
     fontWeight:"bold"}} >Tools</Text>
         
-       <SimpleGrid columns={[2,3,4,5,8]} gap="4%" s>
+       <SimpleGrid columns={[2,3,4,5,8]} gap="4%" >
          <img style={{border:"1px solid gray"}} src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" align="center" alt="git"/>
          <img style={{border:"1px solid gray"}} src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" align="center" alt="git"/>
          <img style={{border:"1px solid gray"}} src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=whit" align="center" alt="git"/>
@@ -53,7 +55,17 @@ const Skills = () => {
          <img style={{border:"1px solid gray"}} src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white"  align="center" alt="vscode"/>
          <img style={{border:"1px solid gray"}} src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" align="center" alt="slack"/>
        </SimpleGrid>
-       <Image mt="35px" src="https://user-images.githubusercontent.com/82999542/132934744-131c1891-4a4f-4e88-a64a-36720ad7470b.png" alt="hi"/>
+       <Image mt="35px" mb={"5%"} src="https://user-images.githubusercontent.com/82999542/132934744-131c1891-4a4f-4e88-a64a-36720ad7470b.png" alt="hi"/>
+    <Box color={"white"}>  
+    <GitHubCalendar
+    username="krishnakevadiya"
+    blockSize={15}
+    blockMargin={5}
+    color={"grey"}
+    fontSize={15}
+></GitHubCalendar>
+</Box>
+      
       </Box>
       </Box>
     )
